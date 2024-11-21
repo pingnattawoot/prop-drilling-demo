@@ -1,11 +1,8 @@
-import { useContext } from "react";
-import { PostContext } from "../contexts/PostContext";
+import { usePost } from "../hooks/usePost";
 import PostItem from "./PostItem";
 
 function PostList() {
-  const context = useContext(PostContext);
-  if (!context) throw new Error("PostList must be used within a PostProvider");
-  const { posts } = context;
+  const { posts } = usePost();
 
   return (
     <div className="post-list">

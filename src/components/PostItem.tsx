@@ -1,6 +1,5 @@
-import { useContext } from "react";
+import { usePost } from "../hooks/usePost";
 import { Post } from "../types";
-import { PostContext } from "../contexts/PostContext";
 import AuthorInfo from "./AuthorInfo";
 
 interface PostItemProps {
@@ -8,9 +7,7 @@ interface PostItemProps {
 }
 
 function PostItem({ post }: PostItemProps) {
-  const context = useContext(PostContext);
-  if (!context) throw new Error("PostItem must be used within a PostProvider");
-  const { setSelectedPostId, selectedPostId } = context;
+  const { setSelectedPostId, selectedPostId } = usePost();
 
   const isSelected = selectedPostId === post.id;
 

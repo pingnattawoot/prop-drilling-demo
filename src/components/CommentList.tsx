@@ -1,13 +1,10 @@
-import { useState, useEffect, useContext } from "react";
+import { useEffect, useState } from "react";
+import { usePost } from "../hooks/usePost";
 import { Comment } from "../types";
-import { PostContext } from "../contexts/PostContext";
 import CommentItem from "./CommentItem";
 
 function CommentList() {
-  const context = useContext(PostContext);
-  if (!context)
-    throw new Error("CommentList must be used within a PostProvider");
-  const { selectedPostId } = context;
+  const { selectedPostId } = usePost();
 
   const [comments, setComments] = useState<Comment[]>([]);
 
