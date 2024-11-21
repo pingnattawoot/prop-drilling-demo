@@ -1,0 +1,38 @@
+.app {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+}
+
+.post-item {
+  border: 1px solid #ddd;
+  margin: 10px 0;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.post-list {
+  flex: 1;
+}
+
+.comment-list {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.comment-item {
+  border-left: 3px solid #ddd;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+.author-info {
+  background-color: #f5f5f5;
+  padding: 10px;
+  margin: 10px 0;
+}

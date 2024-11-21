@@ -1,0 +1,62 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Understanding React Props",
+      "author": "Sarah Johnson",
+      "content": "React props are a fundamental concept in React development...",
+      "timestamp": "2024-03-15T10:30:00Z"
+    },
+    {
+      "id": 2,
+      "title": "JavaScript ES6 Features",
+      "author": "Mike Chen",
+      "content": "Modern JavaScript has introduced many useful features...",
+      "timestamp": "2024-03-14T15:45:00Z"
+    },
+    {
+      "id": 3,
+      "title": "Web Development Best Practices",
+      "author": "Emma Wilson",
+      "content": "Following these best practices will improve your code quality...",
+      "timestamp": "2024-03-13T09:15:00Z"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "postId": 1,
+      "author": "John Doe",
+      "content": "Great explanation! This helped me understand props better.",
+      "timestamp": "2024-03-15T11:00:00Z"
+    },
+    {
+      "id": 2,
+      "postId": 1,
+      "author": "Alice Brown",
+      "content": "Could you explain more about prop types?",
+      "timestamp": "2024-03-15T11:30:00Z"
+    },
+    {
+      "id": 3,
+      "postId": 2,
+      "author": "Bob Smith",
+      "content": "Arrow functions are my favorite ES6 feature!",
+      "timestamp": "2024-03-14T16:00:00Z"
+    },
+    {
+      "id": 4,
+      "postId": 2,
+      "author": "Lisa Wang",
+      "content": "Destructuring is also very useful.",
+      "timestamp": "2024-03-14T16:15:00Z"
+    },
+    {
+      "id": 5,
+      "postId": 3,
+      "author": "David Miller",
+      "content": "These practices will save a lot of debugging time.",
+      "timestamp": "2024-03-13T10:00:00Z"
+    }
+  ]
+}
