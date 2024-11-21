@@ -1,16 +1,16 @@
-import { Post } from "../types";
+import { useContext } from "react";
+import { PostContext } from "../contexts/PostContext";
 import PostItem from "./PostItem";
 
-interface PostListProps {
-  posts: Post[];
-  onSelectPost: (postId: number) => void;
-}
+function PostList() {
+  const context = useContext(PostContext);
+  if (!context) throw new Error("PostList must be used within a PostProvider");
+  const { posts } = context;
 
-function PostList({ posts, onSelectPost }: PostListProps) {
   return (
     <div className="post-list">
       {posts.map((post) => (
-        <PostItem key={post.id} post={post} onSelectPost={onSelectPost} />
+        <PostItem key={post.id} post={post} />
       ))}
     </div>
   );
